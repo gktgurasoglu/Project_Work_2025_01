@@ -1,0 +1,80 @@
+01 MRR (Monthly Recurring Revenue)
+  sum([total_payment])
+
+02 Paid_Users_Count
+  sum(if [status] = 'new' or [status] = 'active' or [status] = 'back'
+    then 1
+    else 0
+  end)
+
+03 ARPPU (Average Revenue per Paying User)
+  [01 MRR]/[02 Paid_Users_Count]
+
+04 New_Paid_Users
+  sum(if [status] = 'new'
+    then 1
+    else 0
+  end)
+
+05 New_MRR (New Monthly Recurring Revenue)
+  sum(if [status] = 'new'
+    then [total_payment]
+    else 0
+  end)
+
+06 Churned_Users_Count
+  sum(if [status] = 'churn'
+    then 1
+    else 0
+  end)
+
+07 Churn_Rate
+  [06 Churned_Users_Count]/LOOKUP(([02 Paid_Users_Count]), -1)
+
+08 Churned_Revenue
+  sum(if [status] = 'churn'
+    then [total_payment_previous]
+    else 0
+  end)
+
+09 Revenue_Churned_Rate
+  [08 Churned_Revenue]/lookup(([01 MRR]), -1)
+
+10 Expansion_MRR (Expansion Monthly Recurring Revenue)
+  sum(if [status] = 'active' and [total_payment] > [total_payment_previous]
+    then [total_payment]-[total_payment_previous]
+    else 0
+  end)
+
+11 Contraction_MRR (Contraction Monthly Recurring Revenue)
+  sum(if [status] = 'active' and [total_payment] < [total_payment_previous]
+    then [total_payment_previous]-[total_payment]
+    else 0
+  end)
+
+12 Customer_Life_Time
+  DATEDIFF('month',
+    MIN(IF [status] IN ('new', 'active', 'back') THEN [payment_month] END),
+    MAX(IF [status] IN ('new', 'active', 'back') THEN [payment_month] END)
+  ) + 1
+
+13 Customer_LTV (Customer Life Time Value)
+  AVG( { FIXED [user_id] : SUM([total_payment]) } )
+
+14 Customer_Active_Time
+  {Fixed [user_id]:
+  countd(if [status] = 'new' or [status] = 'active' or [status] = 'back'
+    then [payment_month]
+  end)
+  }
+
+15 Total_Churn_Rate
+  sum(if [status] = 'churn'
+    then 1
+    else 0
+  end)
+  /
+  sum(if [status] = 'new' or [status] = 'active' or [status] = 'back' or [status] = 'deactive'
+    then 1
+    else 0
+  end)
