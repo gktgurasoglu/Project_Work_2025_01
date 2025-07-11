@@ -1,0 +1,41 @@
+All content related to the project will be examined, sample presentation will be watched:
+•	Project-2 file has been examined
+•	The project purpose file was reviewed
+•	Project presentation control form was examined
+•	Project roadmap presentation was examined
+•	Sample project followed
+
+Purpose of the Project:
+•	Development and implementation of dashboards by performing data analysis to make informed strategic decisions,
+•	Optimizing business operations,
+•	Develop to monitor and analyze key metrics to increase profitability.
+
+Revenue Metrics Objectives:
+•	Cash Flow Analysis: It will enable them to monitor and analyze the financial data of the project, including Income-Expense-Profit.
+•	Determination of Profit and Growth Factors: Analyzing revenue data, determining the key factors affecting profitability and determining the measures to be taken to increase revenue.
+•	Supporting Strategic Decisions: Project managers will be able to use dashboards to develop strategies and tactics to increase revenues and optimize business processes.
+
+Project Technical Acceptance Criteria:
+•	Dashboard bulunması gereken metrikler: MRR, Paid Users, ARPPU, New Paid Users, New MRR, Churned Users, Churn Rate, Churned Revenue, Revenue Churn Rate, Expansion MRR, Contraction MRR, Customer Lifetime, LTV (3.Modül 2.Konu ayrıntılı bilgi var) – En az 10 metrik olmalı,
+•	There should be 3 Filtering: Date – Language – Age
+•	Will Contain At Least 5 Charts: Two of them must be graphs showing the month-to-month change factors of income and paid users. An example of this is available in the link (It doesn't have to be the same image)
+•	It will comply with the criteria to be considered when preparing a dashboard (5sec, color palette compatibility, etc.)
+
+Considerations:
+•	There are 2 basic files (games_paid_users and games_payments) Apart from that, there is advertising expenditure data in the games.csv file, it can be used during analysis,
+•	Conversion Rate (CR) can be used as an additional metric – such as CR to Paid,7
+•	Can EMU/WAU/MAU metrics be used, examine from the data set,
+•	Can the forecast model be improved for the next time period?
+•	The relevance of the data with cohort analysis or pairplot should be examined,
+•	Data Cleaning and Data Accuracy Check: Is there any empty, repetitive data (The same id can be of different age, the same id can be a different language, etc.)
+•	User age and payment dates can be checked (Data accuracy quality is checked)
+•	What can be done within the scope of Feature Engineering – it can be used in modeling: DAU/WAU/MAU, age groups, active time use, etc.
+
+Writing the SQL Query:
+
+Creating a Tableau Dashboard:
+
+Using Python (Alternative Solution):
+
+Using Power BI (Alternative Solution):
+
