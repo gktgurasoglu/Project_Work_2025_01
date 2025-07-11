@@ -1,0 +1,19 @@
+20 Radial - LOD
+  {Fixed [language] : [01 MRR]}
+
+20 Radial - Points
+  if contains([user_id], "a") then 0 
+  else {Fixed [language] : [01 MRR]/50000} * 360
+  end
+
+20 Radial - Rank
+  rank_unique(-sum([20 Radial - LOD]))
+
+20 Radial - X
+  sin((index()-1) * window_max(max(pi()))/180) * WINDOW_MAX([20 Radial - Rank])
+
+20 Radial - Y
+  cos((index()-1) * window_max(max(pi()))/180) * WINDOW_MAX([20 Radial - Rank])
+
+20 Radial - Points(bin) (Discrete)
+  size of bins : 1
