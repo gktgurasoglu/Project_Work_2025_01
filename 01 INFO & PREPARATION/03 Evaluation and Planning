@@ -1,0 +1,27 @@
+Bir nakit akışı analizi panosu oluşturulacak, gelirler, giderler ve kârlar dahil olmak üzere projenin finansal verilerinin izlenmesi ve analiz edilmesi sağlanacaktır.
+Proje karlılığını etkileyen temel faktörler belirlenecek ve geliri artırmak için hangi önlemlerin alınabileceği tespit edilecektir.
+
+•    Görevin gereksinimleri ve talepler incelendi, veri seti olan 2 dosya açılıp önizlemesi gerçekleştirildi. Bu kapsamda:
+      İstenen KPI'lar dashboarda eklenecek,
+      Özel olarak istenen grafik tasarımı eklenecek,
+      3 adet filtre / dilimleyici eklenecek,
+      SQL ve TABLEAU kullanarak görevin yapılması istenmekte,
+      Dosya önizlemesi neticesinde feature engineering kapsamında çok seçeneğimiz olmadığı anlaşılıyor,
+
+•    Veri seti olan 2 dosyamız PostgreSql ile analiz edilecek:
+      Kolon isimleri ve veri türleri incelenecek - veri türü dönüşümü ihtihyacı varsa yapılacak,
+      Toplamda kaç satır veri olduğuna ve NULL değer olup olmadığına bakılacak,
+      NULL değer varsa duruma göre karar verilecek - silinme / ortalama / median vb.
+      Sayısal değere sahip sütunların temel istatistiksel hesaplamaları yapılarak genel bilgi sahibi olunacak,
+      Verilerin hangi zaman aralığını içerdiği tespit edilecek,
+      Verilerin anlamlılığı ve eksikliği değerlendirilecek,
+      Görselleştirme aşamasına geçmeden önce ana sorguya eklenmesi gereken satır ve sütunlar eklenmiş olacak.
+
+•    Ana sorgu oluşturulduktan sonra görselleştirme için TABLEAU kullanılacak:
+      KPI hesaplamaları bu platformda yapılacak,
+      Dashboard'un görsel estetiğine ve finansal analiz sunumuna uygun sıralanmasına özen gösterilecek.
+
+•    Yapılan analiz ve görselleştirilmiş rapor, Power Point programı kullanılarak sunulacaktır.
+  
+  
+  
