@@ -1,27 +1,27 @@
-Bir nakit akışı analizi panosu oluşturulacak, gelirler, giderler ve kârlar dahil olmak üzere projenin finansal verilerinin izlenmesi ve analiz edilmesi sağlanacaktır.
-Proje karlılığını etkileyen temel faktörler belirlenecek ve geliri artırmak için hangi önlemlerin alınabileceği tespit edilecektir.
+A cash flow analysis dashboard will be created to monitor and analyze the project's financial data, including revenues, expenses, and profits.
+The key factors affecting the project's profitability will be identified, and measures that can be taken to increase revenue will be determined.
 
-•    Görevin gereksinimleri ve talepler incelendi, veri seti olan 2 dosya açılıp önizlemesi gerçekleştirildi. Bu kapsamda:
-      İstenen KPI'lar dashboarda eklenecek,
-      Özel olarak istenen grafik tasarımı eklenecek,
-      3 adet filtre / dilimleyici eklenecek,
-      SQL ve TABLEAU kullanarak görevin yapılması istenmekte,
-      Dosya önizlemesi neticesinde feature engineering kapsamında çok seçeneğimiz olmadığı anlaşılıyor,
+•    The requirements and demands of the task were reviewed, and two files containing the data set were opened and previewed. In this context:
+      The requested KPIs will be added to the dashboard,
+      The specifically requested graphic design will be added,
+      Three filters/slicers will be added,
+      The task is to be performed using SQL and TABLEAU,
+      As a result of the file preview, it is understood that we do not have many options in terms of feature engineering.
 
-•    Veri seti olan 2 dosyamız PostgreSql ile analiz edilecek:
-      Kolon isimleri ve veri türleri incelenecek - veri türü dönüşümü ihtihyacı varsa yapılacak,
-      Toplamda kaç satır veri olduğuna ve NULL değer olup olmadığına bakılacak,
-      NULL değer varsa duruma göre karar verilecek - silinme / ortalama / median vb.
-      Sayısal değere sahip sütunların temel istatistiksel hesaplamaları yapılarak genel bilgi sahibi olunacak,
-      Verilerin hangi zaman aralığını içerdiği tespit edilecek,
-      Verilerin anlamlılığı ve eksikliği değerlendirilecek,
-      Görselleştirme aşamasına geçmeden önce ana sorguya eklenmesi gereken satır ve sütunlar eklenmiş olacak.
+•    Our two data files will be analyzed using PostgreSQL:
+      Column names and data types will be examined—data type conversion will be performed if necessary.
+      The total number of rows and the presence of NULL values will be checked.
+      If NULL values are present, a decision will be made based on the situation—deletion/average/median, etc.
+      Basic statistical calculations will be performed on columns containing numerical values to gain general information,
+      The time range covered by the data will be determined,
+      The meaningfulness and completeness of the data will be evaluated,
+      The rows and columns that need to be added to the main query before proceeding to the visualization stage will be added.
 
-•    Ana sorgu oluşturulduktan sonra görselleştirme için TABLEAU kullanılacak:
-      KPI hesaplamaları bu platformda yapılacak,
-      Dashboard'un görsel estetiğine ve finansal analiz sunumuna uygun sıralanmasına özen gösterilecek.
+•    Once the main query has been created, TABLEAU will be used for visualization:
+      KPI calculations will be performed on this platform,
+      Care will be taken to ensure that the dashboard is arranged in a manner that is consistent with its visual aesthetics and financial analysis presentation.
 
-•    Yapılan analiz ve görselleştirilmiş rapor, Power Point programı kullanılarak sunulacaktır.
+•    The analysis and visualized report will be presented using Power Point software.
   
   
   
